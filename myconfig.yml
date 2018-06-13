@@ -1,0 +1,16 @@
+train:
+    batch_size: 1 
+    val_batch_size: 4 
+    learning_rate: .0001
+    num_epochs: 3
+    restore_model: False
+    pre_train: True 
+    model: 'resnet'
+    checkpoint_dir: './checkpoint2/resnet/'
+
+model:
+    mean_normalize: [0.485, 0.456, 0.406] 
+    num_classes: 3 
+    image_height: 384
+    image_width: 384 
+    class_weights: [1,2.5,7.5]
